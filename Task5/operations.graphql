@@ -1,0 +1,36 @@
+# Получить клиента
+
+{
+  client(id: "1000") {
+    id
+    name
+    age
+  }
+}
+
+# Получить документы клиента
+
+{
+  client(id: "1000") {
+    documents {
+        id
+        type
+        number
+        issueDate
+        expiryDate
+    }
+  }
+}
+
+# Получить родственников клиента
+
+{
+  client(id: "1000") {
+    relatives {
+        id
+        name
+        age
+        relationType
+    }
+  }
+}
